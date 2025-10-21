@@ -30,6 +30,7 @@ const renderHomePage = () => {
   //Container for elements
   const homeContainer = document.createElement("div");
   homeContainer.className = "homeContainer";
+  homeContainer.setAttribute("data-cy", "page-home");
 
   homeContainer.append(header, subHeading, image);
   main.append(homeContainer);

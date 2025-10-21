@@ -5,10 +5,14 @@
   "type": "module",
   "license": "MIT",
   "scripts": {
-    "dev": "parcel index.html",
+    "dev": "parcel index.html --port 1234",
     "build": "parcel build index.html",
+    "clean": "rm -rf dist .parcel-cache",
     "gulp": "gulp",
-    "test": "mocha test/**/*.js"
+    "test": "mocha test/**/*.js",
+    "cypress": "cypress run",
+    "cypress:open": "cypress open",
+    "e2e": "start-server-and-test dev http://localhost:1234 cypress"
   },
   "devDependencies": {
     "chai": "^4.3.10",
@@ -19,7 +23,8 @@
     "gulp-shell": "^0.8.0",
     "mocha": "^10.2.0",
     "parcel": "^2.10.3",
-    "prettier": "^3.1.1"
+    "prettier": "^3.1.1",
+    "start-server-and-test": "^2.1.2"
   },
   "keywords": [
     "flashcards",

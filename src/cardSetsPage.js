@@ -20,6 +20,7 @@ export const renderCardSetsPage = () => {
   // Creates a container for the pages contents
   const container = document.createElement("div");
   container.className = "cardPageContainer";
+  container.setAttribute("data-cy", "page-sets");
   // Creates the header for the page
   const pageHeader = createHeader(
     "h2",

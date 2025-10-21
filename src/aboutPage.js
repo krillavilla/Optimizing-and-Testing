@@ -20,6 +20,7 @@ export const renderAboutPage = () => {
   // Create the outer container for the about section
   const containerOuter = document.createElement("div");
   containerOuter.className = "aboutContainer";
+  containerOuter.setAttribute("data-cy", "page-about");
 
   // Create the text container for the heading, subheading, and paragraph
   const textContainer = document.createElement("div");
